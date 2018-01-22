@@ -1,12 +1,19 @@
+// Third-party libraries and packages.
 @import 'node_modules/sanitize.css/sanitize';
-// NOT WORKING TALK TO VINCENT
+// NOT WORKING TALK TO VINCENT - PADDING??
+
+// Project specific styles.
+@import 'project/_project';
+@import 'components/_components';
+
+
 $purple: #9044ED;
 
 * {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
 
 .container {
   padding-top: 100px;
@@ -64,6 +71,9 @@ $purple: #9044ED;
       height: inherit;
       width: inherit;
     }
+  }
+  .search__button:active, .search__button:focus,  {
+    outline: none;
   }
 }
 

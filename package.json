@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:styles": "node-sass src/styles/giphy.scss public/assets/styles/giphy.css && cleancss -o public/assets/styles/giphy.min.css public/assets/styles/giphy.css",
+    "build:styles": "node-sass --source-map true src/styles/giphy.scss public/assets/styles/giphy.css && cleancss -o public/assets/styles/giphy.min.css public/assets/styles/giphy.css",
     "watch:styles": "node-sass src/styles/giphy.scss --watch public/assets/styles/giphy.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
