@@ -1,0 +1,71 @@
+@import 'node_modules/sanitize.css/sanitize';
+$purple: #9044ED;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding-top: 100px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column;
+  height: 100vh;
+  width: 80vw;
+}
+
+.header {
+  width: 60%;
+  min-width: 280px;
+  height: auto;
+  .header__logo {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.giphy {
+  width: 100%;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;flex-flow: row;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 70px;
+
+  .search__input {
+    height: 40px;
+    width: 55%;
+    min-width: 290px;
+    padding-left: 10px;
+    border: 2px solid $purple;
+  }
+
+  .search__input:focus {
+    outline: none;
+  }
+
+  .search__button {
+    border: none;
+    background-color: none;
+    width: 40px;
+    height: 40px;
+
+    .search__icon {
+      height: inherit;
+      width: inherit;
+    }
+  }
+}
+
+.yrgo {
+  color: $purple;
+}
