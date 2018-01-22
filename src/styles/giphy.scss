@@ -1,3 +1,5 @@
+@charset 'UTF-8';
+
 // Third-party libraries and packages.
 @import 'node_modules/sanitize.css/sanitize';
 // NOT WORKING TALK TO VINCENT - PADDING??
@@ -6,9 +8,6 @@
 @import 'project/_project';
 @import 'components/_components';
 
-
-
-$purple: #9044ED;
 
 .container {
   padding-top: 100px;
@@ -76,4 +75,5 @@ $purple: #9044ED;
 
 .yrgo {
   color: $purple;
+  font-family: $main-font;
 }
