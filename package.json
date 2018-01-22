@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "talk": "echo Hello World",
+    "build:styles": "node-sass src/styles/giphy.scss public/assets/styles",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

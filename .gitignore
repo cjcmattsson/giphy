@@ -1,1 +1,4 @@
 node_modules
+
+public/assets/styles/*.css
+public/assets/styles/*.map
