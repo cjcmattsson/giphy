@@ -4,17 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:styles": "node-sass src/styles/giphy.scss | cleancss public/assets/styles/giphy.css",
+    "build:styles": "node-sass src/styles/giphy.scss | cleancss --output public/assets/styles/giphy.css",
     "watch:styles": "node-sass --source-map true src/styles/giphy.scss --watch public/assets/styles/giphy.css",
-    "browser": "browser-sync start --server public --files ./public/**/*",
-    "watch": "npm-run-all --parallel browser watch:styles",
+    "browser": "browser-sync start --server public --files ./**/*",
+    "watch": "npm-run-all --parallel browser watch:*",
     "build:scripts": "rollup --config",
+    "watch:scripts": "rollup --config --watch",
+    "build": "npm-run-all --parallel build:*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.23.6",
+    "clean-css-cli": "^4.1.10",
     "node-sass": "^4.7.2",
     "npm-run-all": "^4.1.2",
     "query-string": "^5.0.1",
