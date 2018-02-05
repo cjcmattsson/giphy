@@ -8,6 +8,7 @@
     "watch:styles": "node-sass --source-map true src/styles/giphy.scss --watch public/assets/styles/giphy.css",
     "browser": "browser-sync start --server public --files ./public/**/*",
     "watch": "npm-run-all --parallel browser watch:styles",
+    "build:scripts": "rollup --config",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -17,6 +18,7 @@
     "node-sass": "^4.7.2",
     "npm-run-all": "^4.1.2",
     "query-string": "^5.0.1",
+    "rollup": "^0.55.3",
     "sanitize.css": "^5.0.0"
   }
 }
