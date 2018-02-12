@@ -1,4 +1,5 @@
 import log from './log.js';
+import search from './search.js';
 /*
  * This file is part of Giphy.
  *
@@ -34,4 +35,4 @@ function bootstrap () {
 document.addEventListener('DOMContentLoaded', bootstrap);
 window.addEventListener('load', bootstrap);
 
-log();
+// log();

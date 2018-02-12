@@ -8,6 +8,25 @@
 @import 'project/_project';
 @import 'components/_components';
 
+.gallery {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: wrap;
+  height: auto;
+  width: 80%;
+}
+
+.query {
+  text-align: center;
+}
+
+.image {
+  margin: 1%;
+  height: 120px;
+  width: 18%;
+}
 
 .container {
   padding-top: 100px;
