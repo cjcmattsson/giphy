@@ -1,3 +1,4 @@
+import log from './log.js';
 /*
  * This file is part of Giphy.
  *
@@ -32,3 +33,5 @@ function bootstrap () {
 // We setup two listeners for better browser support.
 document.addEventListener('DOMContentLoaded', bootstrap);
 window.addEventListener('load', bootstrap);
+
+log();

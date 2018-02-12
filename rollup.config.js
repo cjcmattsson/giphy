@@ -9,9 +9,7 @@ export default {
     file: 'public/assets/scripts/giphy.js',
     format: 'iife',
     sourcemap: true
-  }
-};
-
+},
 plugins: [
   resolve(),
   babel({
@@ -20,3 +18,4 @@ plugins: [
   commonjs(),
   (process.env.NODE_ENV === 'production' && uglify()),
 ]
+}
